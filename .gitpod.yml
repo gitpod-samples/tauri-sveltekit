@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Build the rust project and run the devserver
+    init: cd src-tauri && cargo build
+    command: |
+      gp preview "$(gp url 6080)"
+      yarn add -D @tauri-apps/cli
+      yarn tauri dev
