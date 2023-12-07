@@ -7,3 +7,8 @@ tasks:
     command: |
       yarn add -D @tauri-apps/cli
       yarn tauri dev
+
+ports:
+  - name: noVNC Client
+    port: 6080
+    onOpen: open-preview

@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full-vnc
 
 # https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-linux
 RUN sudo apt update \
